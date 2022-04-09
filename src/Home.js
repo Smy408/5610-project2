@@ -1,5 +1,5 @@
 import React from 'react'; 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link,  } from 'react-router-dom';
 import App from "./App";
 import Instruction from './Instruction.js';
 import './App.css'; 
@@ -15,7 +15,13 @@ function Home() {
                   <Link to="/home" className="list">Home</Link>                  
                   </l1>
                   <l1>
-                  <Link to="/App" className="list">EasyGame</Link>                 
+                  <Link to="/game/easy" onClick={() => window.location.href="/game/easy"} className="list">EasyGame</Link>                 
+                  </l1>
+                  <l1>
+                  <Link to="/game/medium" onClick={() => window.location.href="/game/medium"} className="list">MediumGame</Link>                 
+                  </l1>
+                  <l1>
+                  <Link to="/game/hard" onClick={() => window.location.href="/game/hard"} className="list">HardGame</Link>                 
                   </l1>
                 <l1>
                
@@ -25,9 +31,23 @@ function Home() {
               </nav>
 
               <Routes>
-            
-                  <Route path="/App" element={<App />} />
-                  <Route path="/instruction" element={<Instruction />} />
+                <Route 
+                    exact path="/game/easy"
+                    key="easy-game"
+                    element={<App /> } 
+                />
+                <Route 
+                    key="medium-game"
+                    exact path="/game/medium"
+                    element={<App /> }
+                />
+                <Route  
+                    key="hard-game"
+                    exact path="/game/hard"
+                    element={<App /> }
+                />
+                  
+                <Route path="/instruction" element={<Instruction />} />
               </Routes>
             
             

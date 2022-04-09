@@ -11,7 +11,7 @@ function GameOver() {
     <div className="gameOver">
       <h3>
         {gameOver.guessedWord
-          ? "Congratulations!  Would you like to try again?"
+          ? <h3>Congratulations!  Would you like to try again?</h3>
           : <h3>You Failed to Guess the Word. Correct Word: {correctWord}</h3>}
       </h3>
       <button onClick={() => window.location.reload(false)}>Try Again</button>

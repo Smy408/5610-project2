@@ -7,6 +7,9 @@ function Instruction() {
         <br />
         <br />
         <br />
+        <br />
+        <br />
+        <br />
         <h1>
             Instruction on how to play
         </h1>

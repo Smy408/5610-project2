@@ -1,14 +1,14 @@
 import "./App.css";
 import Board from "./components/Board";
 import Keyboard from "./components/Keyboard";
-import { boardDefault, generateWordSet } from "./Words";
+import { boardDefaults, generateWordSet } from "./Words";
 import React, { useState, createContext, useEffect } from "react";
 import GameOver from "./components/GameOver";
 
 export const AppContext = createContext();
 
 function App() {
-  const [board, setBoard] = useState(boardDefault);
+  const [board, setBoard] = useState(boardDefaults[0]);
   const [currAttempt, setCurrAttempt] = useState({ attempt: 0, letter: 0 });
   const [wordSet, setWordSet] = useState(new Set());
   const [correctWord, setCorrectWord] = useState("");
@@ -73,6 +73,9 @@ function App() {
 
   return (
     <div className="App">
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />
