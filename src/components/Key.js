@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { AppContext } from "../App";
+import "../App.css"; 
 
-function Key({ keyVal, bigKey, disabled }) {
+function Key({ keyVal, bigKey}) {
   const { gameOver, onSelectLetter, onDelete, onEnter } =
     useContext(AppContext);
 
@@ -18,12 +19,12 @@ function Key({ keyVal, bigKey, disabled }) {
   return (
     <div
       className="key"
-      id={bigKey ? "big" : disabled && "disabled"}
+      id={bigKey? "big" : ""}
       onClick={selectLetter}
     >
       {keyVal}
     </div>
   );
-}
+} 
 
 export default Key;

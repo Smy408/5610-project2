@@ -1,9 +1,9 @@
 .App {
   text-align: center;
-  background-color: #121212;
+  background-color: #dcdcdc;
   width: 100vw;
   height: 100vh;
-  color: white;
+  color: #2C5F2DFF;
 }
 
 body {
@@ -12,18 +12,20 @@ body {
 }
 
 nav {
-  height: 60px;
-  width: 100%;
-  margin: 0;
-  border-bottom: 1px solid grey;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #7db46cff;
+  color: #fff;
+
 }
 
-nav h1 {
+h1 {
+  margin-top: 20px;
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
-  color: white;
+  color: #2C5F2DFF;
   font-size: 45px;
 }
 .game {
@@ -41,6 +43,8 @@ nav h1 {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
+
 }
 
 .row {
@@ -72,7 +76,7 @@ nav h1 {
 }
 
 #error {
-  background-color: #3a393c;
+  background-color: #949398ff;
 }
 
 .keyboard {
@@ -121,17 +125,21 @@ nav h1 {
 #big {
   width: 100px;
 }
-#disabled {
-  background-color: #3a393c;
-}
+
 
 .list{
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
   color: white; 
-  font-size: 25px; 
-  font-weight: 300; 
-  float: left; 
-  display: block;
-  position: relative; 
-  top: 2px; 
+  padding: 5px 14px; 
+
+
+
+}
+.button{
+  background-color: #528d4e;
+  width: 20px;
+  height: 20px; 
 
 }
