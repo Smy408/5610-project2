@@ -15,7 +15,7 @@ function Home() {
         <div className="App">
             <Router>
               <nav>
-                  <h1>Welcome to Wordle</h1>
+                  
                   <l1>
                   <Link to="/home" className="list">Home</Link>                  
                   </l1>
@@ -34,6 +34,8 @@ function Home() {
                   </l1>
                   
               </nav>
+
+               <h1>Welcome to Wordle</h1>
 
               <Routes>
                 <Route 
