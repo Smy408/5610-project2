@@ -8,7 +8,7 @@ import {
   useLocation
 } from "react-router-dom";
 import GameOver from "./components/GameOver";
-import Popup from "./components/popup"; 
+
 
 export const AppContext = createContext(); 
 
